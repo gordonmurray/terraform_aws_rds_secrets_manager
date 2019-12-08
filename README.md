@@ -1,2 +1,3 @@
-# aws_rds_secrets_manager
-Create an AWS RDS instance, generate and store its admin password in AWS Secrets manager
+# AWS RDS with AWS Secrets Manager
+
+A simple example to show how to create an AWS RDS instance, generate and store its admin password in AWS Secrets manager using Terraform.
