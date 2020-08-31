@@ -5,6 +5,6 @@ resource "aws_secretsmanager_secret" "example" {
 }
 
 resource "aws_secretsmanager_secret_version" "secret" {
-  secret_id     = "${aws_secretsmanager_secret.example.id}"
+  secret_id     = aws_secretsmanager_secret.example.id
   secret_string = random_password.password.result
 }
