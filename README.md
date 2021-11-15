@@ -5,15 +5,23 @@ A simple example to show how to create an AWS RDS instance, generate and store i
 
 ### Cost
 ```
-  NAME                             QUANTITY  UNIT      HOURLY COST  MONTHLY COST  
+ Name                                                            Monthly Qty  Unit                    Monthly Cost
 
-  aws_db_instance.default                              
-  ├─ GB                                  20  GB/month       0.0035        2.5400  
-  └─ instance hours (db.t2.micro)       730  hour           0.0180       13.1400  
-  Total                                                     0.0215       15.6800  
-                                                       
-  OVERALL TOTAL                                             0.0215       15.6800  
+ aws_db_instance.default
+ ├─ Database instance (on-demand, Single-AZ, db.t3.micro)                730  hours                         $13.14
+ └─ Storage (general purpose SSD, gp2)                                    20  GB                             $2.54
 
+ aws_kms_key.default
+ ├─ Customer master key                                                    1  months                         $1.00
+ ├─ Requests                                               Monthly cost depends on usage: $0.03 per 10k requests
+ ├─ ECC GenerateDataKeyPair requests                       Monthly cost depends on usage: $0.10 per 10k requests
+ └─ RSA GenerateDataKeyPair requests                       Monthly cost depends on usage: $0.10 per 10k requests
+
+ aws_secretsmanager_secret.example
+ ├─ Secret                                                                 1  months                         $0.40
+ └─ API requests                                           Monthly cost depends on usage: $0.05 per 10k requests
+
+ OVERALL TOTAL                                                                                              $17.08
 ```
 
-Estimate cost generated using [Infracost](https://github.com/aliscott/infracost)
+Estimate cost generated using [Infracost](https://github.com/Infracost/infracost)
