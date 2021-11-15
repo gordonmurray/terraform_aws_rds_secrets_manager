@@ -1,3 +1,5 @@
+[![tfsec](https://github.com/gordonmurray/terraform_aws_rds_secrets_manager/actions/workflows/tfsec-analysis.yml/badge.svg)](https://github.com/gordonmurray/terraform_aws_rds_secrets_manager/actions/workflows/tfsec-analysis.yml)
+
 # AWS RDS with AWS Secrets Manager
 
 A simple example to show how to create an AWS RDS instance, generate and store its admin password in AWS Secrets manager using Terraform.
