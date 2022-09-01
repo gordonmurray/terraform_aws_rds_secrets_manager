@@ -8,8 +8,8 @@ resource "aws_db_instance" "default" {
   allocated_storage       = 20
   storage_type            = "gp2"
   engine                  = "mariadb"
-  engine_version          = "10.4.21"
-  instance_class          = "db.t3.micro"
+  engine_version          = "10.4.25"
+  instance_class          = "db.t4g.small"
   username                = "Admin"
   password                = random_password.password.result
   parameter_group_name    = "default.mariadb10.4"
