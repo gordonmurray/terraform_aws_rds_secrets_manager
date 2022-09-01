@@ -1,0 +1,6 @@
+version: 0.1
+resource_usage:
+
+  aws_db_instance.default:
+    reserved_instance_term: 1_year                          # Term for Reserved Instances, can be: 1_year, 3_year.
+    reserved_instance_payment_option: no_upfront       # Payment option for Reserved Instances, can be: no_upfront (only for 1_year term), partial_upfront, all_upfront.
