@@ -7,7 +7,7 @@ A simple example to show how to create an AWS RDS instance, generate and store i
 
 ### Cost
 ```
-Project: gordonmurray/terraform_aws_rds_secrets_manager
+Project: gordonmurray/terraform_aws_rds_secrets_manager 
 
  Name                                                            Monthly Qty  Unit                    Monthly Cost 
                                                                                                                    
