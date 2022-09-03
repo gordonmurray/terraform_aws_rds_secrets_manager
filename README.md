@@ -31,7 +31,7 @@ Project: gordonmurray/terraform_aws_rds_secrets_manager
 4 cloud resources were detected:
 ∙ 3 were estimated, 2 of which include usage-based costs, see https://infracost.io/usage-file
 ∙ 1 was free:
-  ∙ 1 x aws_secretsmanager_secret_version
+  ∙ 1 x aws_secretsmanager_secret_version 
 ```
 
 Estimate cost generated using [Infracost](https://github.com/Infracost/infracost)
