@@ -34,4 +34,4 @@ Project: gordonmurray/terraform_aws_rds_secrets_manager
   ∙ 1 x aws_secretsmanager_secret_version
 ```
 
-Estimate cost generated using [Infracost](https://github.com/Infracost/infracost)
+Estimate cost generated using [Infracost](https://github.com/Infracost/infracost)  
