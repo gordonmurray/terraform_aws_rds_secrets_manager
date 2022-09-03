@@ -15,7 +15,7 @@ terraform {
 
 provider "aws" {
   region  = "eu-west-1"
-
+ 
   default_tags {
     tags = {
       App = "terraform_aws_rds_secrets_manager"
