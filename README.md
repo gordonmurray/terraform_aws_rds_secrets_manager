@@ -26,7 +26,7 @@ Project: gordonmurray/terraform_aws_rds_secrets_manager
  ├─ Secret                                                                 1  months                         $0.40 
  └─ API requests                                           Monthly cost depends on usage: $0.05 per 10k requests   
                                                                                                                    
- OVERALL TOTAL                                                                                              $20.58 
+ OVERALL TOTAL                                                                                            $20.58 
 ──────────────────────────────────
 4 cloud resources were detected:
 ∙ 3 were estimated, 2 of which include usage-based costs, see https://infracost.io/usage-file
