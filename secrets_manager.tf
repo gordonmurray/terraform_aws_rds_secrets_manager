@@ -13,3 +13,15 @@ resource "aws_secretsmanager_secret_version" "secret" {
   secret_id     = aws_secretsmanager_secret.example.id
   secret_string = random_password.password.result
 }
+
+resource "aws_secretsmanager_secret" "proxy" {
+  name = "proxy_admin"
+}
+
+resource "aws_secretsmanager_secret_version" "proxy" {
+  secret_id = aws_secretsmanager_secret.proxy.id
+  secret_string = jsonencode({
+    username = "proxyadmin"
+    password = "proxypassword"
+  })
+}
